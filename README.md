@@ -59,7 +59,13 @@ Loss function을 정의할 때 Regularization을 추가하는 것이 좋다.
 
 ### Optimization
 
-위에서 Loss Function을 정의했다. 기계학습에서는 이 Loss Function의 값을 최소화 할 수 있는 Parameter를 설정하는 것이 중요한 목표이다. Loss Function의 값을 최소화하기 위해서는 임의의 값을 무한하게 검색하여 그중에 가장 작은 값을 취할 수 있지만 
+위에서 Loss Function을 정의했다. 기계학습에서는 이 Loss Function의 값을 최소화 할 수 있는 Parameter를 설정하는 것이 중요한 목표이다. Loss Function의 값을 최소화하기 위해서는 임의의 값을 무한하게 검색하여 그중에 가장 작은 값을 취할 수 있지만 굉장히 비효율적이다.
+
+![loss_fn_opt](https://user-images.githubusercontent.com/44831709/148028366-37b9bf10-ff22-4777-99f4-1dc33eeefb7b.png)
+
+
+위 그림에서 J 즉 Loss function의 값이 가장 낮은 곳으로 진행해야 한다면 왼쪽에서 오른쪽으로 진행해야 하는데 이는 매 순간에서의 gradient를 구하고 그만큼 진행해 나가며 최적의 cost function을 제공하는 Weight를 찾을 수 있다.
+![update_weight](https://user-images.githubusercontent.com/44831709/148030328-a2233741-07ac-40f7-9127-2d399e4e5594.png)
 
 
 
