@@ -80,6 +80,9 @@ x와 W를 곱해서 score를 얻고 score를 통해서 data loss를 얻고 이�
 
 앞에서 공부한 Optimazation은 단순한 함수 형태에서는 Gradient를 쉽게 얻고 그에따라 W를 수정해가며 Optimazation을 진행했다. 하지만 Computational Graph처럼 복잡하게 구성되고 많은 W가 있을 때 어떻게 Optimazation을 진행할 수 있을까? 
 
+![backprop_ex](https://user-images.githubusercontent.com/44831709/148150482-b87f6b89-f4a7-4037-9ff4-0fa370cf09b7.png)
+
+Computational Graph 에서 말단까지 연산을 마쳤다면 말단에서 다시 역방향으로 진행하여 각 노드에서 W를 수정하는 방법을 생각해보자. 각각의 Gradient는 편미분을 활용하고 나아가 Chain Rule을 적용하여 진행하면서 
 ## Convolutional Neural Networks
 
 ## Training Neural Networks
