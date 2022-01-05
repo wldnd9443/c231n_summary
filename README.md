@@ -39,7 +39,7 @@
 ## Loss Function and Optimization
 ### Loss
 Loss는 선형분류에서 하나의 예측값이 선형함수로 부터 얼마나 차이가 있는지 나타내는 하나의 값으로 이 값이 클 수록 손실 값이 큼을 의미한다.
-Loss는 정의하기에 따라 다양하고 이번 강의에서는 Softmax와 SVM을 소개한다.
+Loss는 정의하기에 따라 다양하고 이 강의에서는 Softmax와 SVM을 소개한다.
 ![softmax_loss](https://user-images.githubusercontent.com/44831709/148022449-17ca9072-4018-4f18-b4f4-651c42466c47.png)
 
 ![SVM_loss](https://user-images.githubusercontent.com/44831709/148022451-35c11d53-c8a4-4af2-9c09-cef67860ca02.png)
@@ -70,10 +70,15 @@ Loss function을 정의할 때 Regularization을 추가하는 것이 좋다.
 
 ## Backpropagation and Neural Networks
 
-
 ### Computational Graph
 
+![comp_graph](https://user-images.githubusercontent.com/44831709/148145586-db3137ee-bb1d-4ae3-996d-04e4fcd3c14f.png)
+
 x와 W를 곱해서 score를 얻고 score를 통해서 data loss를 얻고 이것을 Regularization과 더해주는것 , 하나의 숫자로 표현되는 전체의 과정을 Compuational Graph라고 한다.
+
+### Back Propagation 
+
+앞에서 공부한 Optimazation은 단순한 함수 형태에서는 Gradient를 쉽게 얻고 그에따라 W를 수정해가며 Optimazation을 진행했다. 하지만 Computational Graph처럼 복잡하게 구성되고 많은 W가 있을 때 어떻게 Optimazation을 진행할 수 있을까? 
 
 ## Convolutional Neural Networks
 
