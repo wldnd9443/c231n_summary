@@ -11,7 +11,7 @@
 
 ### Nearest Neighbor
 
- 아래의 그림과 같이 이미지의 모든 픽셀을 수치화 하고 다른 이미지와 각 픽셀 값의 차이의 절대값을 취하여 유사도를 측정한다. 아래 그림은 456의 유사도를 갖는다. 이와 같은 방법은 각각의 픽셀을 서로 비교하는 원초적인 방법이라 간단하지만 그만큼 학습에 많은 시간이 필요하다.
+ 아래의 그림과 같이 이미지의 모든 픽셀을 수치화 하고 다른 이미지와 각 픽셀 값의 차이의 절대값을 취하여 사진 사이의 거리를 측정한다. 아래 그림은 456의 거리를 갖는다. 이와 같은 방법은 각각의 픽셀을 서로 비교하는 원초적인 방법이라 간단하지만 그만큼 학습에 많은 시간이 필요하다.
  
  ![image](https://user-images.githubusercontent.com/44831709/148003066-850ecdc1-61a9-4d27-97c1-db6ee37978af.png)
  
@@ -64,12 +64,16 @@ Loss function을 정의할 때 Regularization을 추가하는 것이 좋다.
 ![loss_fn_opt](https://user-images.githubusercontent.com/44831709/148028366-37b9bf10-ff22-4777-99f4-1dc33eeefb7b.png)
 
 
-위 그림에서 J 즉 Loss function의 값이 가장 낮은 곳으로 진행해야 한다면 왼쪽에서 오른쪽으로 진행해야 하는데 이는 매 순간에서의 gradient를 구하고 그만큼 진행해 나가며 최적의 cost function을 제공하는 Weight를 찾을 수 있다.
+위 그림에서 J 즉 Loss function의 값이 가장 낮은 곳으로 진행해야 한다면 왼쪽에서 오른쪽으로 진행해야 하는데 이는 매 순간에서의 gradient를 구하고 그 만큼 진행해 나가며 최적의 cost function을 제공하는 Weight를 찾을 수 있다.
 ![update_weight](https://user-images.githubusercontent.com/44831709/148030328-a2233741-07ac-40f7-9127-2d399e4e5594.png)
 
 
-
 ## Backpropagation and Neural Networks
+
+
+### Computational Graph
+
+x와 W를 곱해서 score를 얻고 score를 통해서 data loss를 얻고 이것을 Regularization과 더해주는것 , 하나의 숫자로 표현되는 전체의 과정을 Compuational Graph라고 한다.
 
 ## Convolutional Neural Networks
 
