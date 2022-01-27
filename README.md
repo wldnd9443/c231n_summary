@@ -1085,7 +1085,7 @@ fully connected layer의 경우 이처럼 모든 픽셀을 한 줄로 stretch하
   #### 13.3.1 Variance reduction
   Policy gradient에서 gradient를 구하기 위해 sampling 하는 과정에서 큰 분산이 문제가 되었다. 조금 더 적은 샘플링으로 낮은 분산을 얻기 위한 방법들을 알아보자.
 
-  ![vari_reduc](/c231n_summary/image/vari_reduc.png)
+  ![vari_reduc](image/vari_reduc.png)
 
   첫번째 아이디어는 미래의 reward만 사용하는 것이다. 경로 내에서 모든 reward를 사용하는 것이 아닌, 현재의 time step에서 부터 종료 시점까지 얻을 수 있는 보상의 합을 사용하는 것이다. 이 방법은 특정 행동이 발생했을 때  미래의 보상이 얼마나 큰지를 고려하겠다는 의도이다. 두번째는 감가율을 적용시키는 것이다. 
 
